@@ -1,0 +1,66 @@
+header > .container {
+  background-image: url(../images/header/mobile/bg.jpg);
+  background-repeat: no-repeat;
+
+  padding: 44px 20px 92px 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: flex-end;
+
+  &__item {
+    &:first-child {
+      margin-right: 40px;
+    }
+  }
+}
+.site-nav__link {
+  color: white;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  &--library {
+    display: none;
+  }
+
+  &--active {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      content: '';
+      width: 34px;
+      height: 3px;
+      background-color: #ff001b;
+    }
+  }
+}
+
+.site-logo {
+  color: white;
+}
+
+.user-input {
+  background: transparent;
+  border: none;
+  border-bottom: 0.5px solid #ffffff;
+
+  &::placeholder {
+    color: white;
+  }
+}
+.login-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
