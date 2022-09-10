@@ -16,8 +16,8 @@ header > .container {
   justify-content: flex-end;
 
   &__item {
-    &:first-child {
-      margin-right: 40px;
+    &:not(:last-child) {
+      margin-right: 15px;
     }
   }
 }
@@ -59,7 +59,8 @@ header > .container {
     color: white;
   }
 }
-.login-btn {
+.login-btn,
+.signup-btn {
   background-color: transparent;
   border: none;
   color: white;
